@@ -50,7 +50,7 @@ const Home = () => {
           <span>
             <TiTick />
           </span>
-          Argon is in Beta, Tgry It!
+          Argon is in Beta, Try It!
         </p>
         <p>
           <span>

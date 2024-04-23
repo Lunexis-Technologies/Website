@@ -26,11 +26,22 @@
 
   .navbar__routes {
     @include routes;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      display: none; /* Hide routes on small screens */
+    }
   }
 
   .navbar__buttons {
     @include flexAlign;
     gap: $lg-gap;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      gap: $sm-gap; /* Adjust gap between buttons */
+    }
 
     button {
       @include button;

@@ -6,14 +6,31 @@
   background: $primary-color;
   color: $secondary-color;
 
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    padding: $sm-gap; /* Adjust padding for small screens */
+  }
+
   .footer__container {
     @include flexDirection;
     gap: $lg-gap;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      gap: 2rem; /* Adjust gap between elements */
+    }
 
     .footer__top {
       @include flexBetween;
       padding-bottom: $lg-gap;
       border-bottom: $border;
+
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        gap: 1.5rem; /* Adjust gap between elements */
+        padding-bottom: 1rem; /* Adjust padding-bottom for small screens */
+      }
 
       .logo {
         @include logo;
@@ -22,6 +39,12 @@
       .footer__cta {
         @include flexAlign;
         gap: $lg-gap;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          flex-direction: column; /* Stack elements vertically on small screens */
+          align-items: flex-start; /* Align elements to the left on small screens */
+        }
 
         button {
           @include button;
@@ -34,14 +57,30 @@
     .footer__middle {
       @include flexBetween;
 
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        gap: 2rem; /* Adjust gap between elements */
+      }
+
       .left__middle {
         @include flexDirection;
         gap: $lg-gap;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          gap: 1rem; /* Adjust gap between elements */
+        }
 
         .input__container {
           border: $border;
           padding: 0.2rem;
           border-radius: 25px;
+
+          /* Media query for small screens */
+          @media (max-width: 767px) {
+            width: 100%; /* Make input container full width on small screens */
+          }
 
           input {
             @include input;
@@ -59,6 +98,12 @@
         .middle__routes {
           @include routes;
 
+          /* Media query for small screens */
+          @media (max-width: 767px) {
+            display: flex; /* Display routes as a flex container on small screens */
+            flex-wrap: wrap; /* Allow routes to wrap to multiple lines */
+          }
+
           li {
             @include textGradient;
           }
@@ -69,8 +114,20 @@
     .footer__bottom {
       @include flexBetween;
 
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        gap: 1rem; /* Adjust gap between elements */
+      }
+
       ul {
         @include routes;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          display: flex; /* Display routes as a flex container on small screens */
+          flex-wrap: wrap; /* Allow routes to wrap to multiple lines */
+        }
       }
     }
   }

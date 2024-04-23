@@ -2,16 +2,23 @@
 @import "./variables";
 
 .app__dashboard {
-  width: 40%;
+  width: 50%;
   position: absolute;
   bottom: -80%;
   left: 0;
   right: 0;
   margin: auto;
 
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    width: 90%; /* Increase width for small screens */
+    bottom: 20%; /* Adjust bottom position for small screens */
+    margin-bottom: 100;
+  }
+
   img {
     width: 100%;
     border-radius: 40px;
-    // box-shadow: $shadow;
+    box-shadow: $shadow;
   }
 }

@@ -6,15 +6,31 @@
   padding: $md-gap $md-gap 20% $md-gap;
   position: relative;
 
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    padding: $md-gap $sm-gap; /* Adjust padding for small screens */
+  }
+
   .feature__container {
     @include flexAlign;
     gap: $lg-gap;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      flex-direction: column; /* Stack content vertically on small screens */
+      gap: 2rem; /* Adjust gap between elements */
+    }
 
     .left__feature {
       flex: 1;
 
       img {
         width: 80%;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          width: 100%; /* Make image full width on small screens */
+        }
       }
     }
 
@@ -23,6 +39,11 @@
       gap: $lg-gap;
       @include flexDirection;
 
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        gap: 1.5rem; /* Adjust gap between elements */
+      }
+
       .right__text {
         gap: $lg-gap;
         @include flexDirection;
@@ -30,6 +51,11 @@
         h1 {
           font-size: 4rem;
           color: $secondary-color;
+
+          /* Media query for small screens */
+          @media (max-width: 767px) {
+            font-size: 2.5rem; /* Adjust font size for small screens */
+          }
         }
 
         p {
@@ -42,6 +68,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: $lg-gap;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          grid-template-columns: 1fr; /* Display features in a single column on small screens */
+        }
 
         .feature {
           @include flexRow;

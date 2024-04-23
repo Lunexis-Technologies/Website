@@ -8,12 +8,25 @@
   @include flexDirection;
   gap: 3rem;
 
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    height: auto; /* Adjust height for small screens */
+    padding: $md-gap $sm-gap; /* Adjust padding for small screens */
+    flex-direction: column; /* Stack content vertically on small screens */
+    gap: 2rem; /* Adjust gap between elements */
+  }
+
   .home__text {
     text-align: center;
 
     h1 {
       @include textGradient;
       font-size: 5rem;
+
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        font-size: 3rem; /* Adjust font size for small screens */
+      }
     }
   }
 
@@ -21,6 +34,12 @@
     @include flexCenter;
     color: $secondary-color;
     gap: $lg-gap;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      flex-wrap: wrap; /* Wrap ticks on small screens */
+      justify-content: center; /* Center align ticks on small screens */
+    }
 
     p {
       @include flexAlign;
@@ -40,6 +59,11 @@
 
   .input__container {
     @include inputContainer;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      width: 100%; /* Make input container full width on small screens */
+    }
 
     button {
       background: $secondary-color;

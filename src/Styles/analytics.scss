@@ -6,21 +6,47 @@
   background: $secondary-color;
   padding: 35% $md-gap 10% $md-gap;
 
+  /* Media query for small screens */
+  @media (max-width: 767px) {
+    padding: 20% $sm-gap 10% $sm-gap; /* Adjust padding for small screens */
+  }
+
   .analytics__container {
     @include flexAlign;
+
+    /* Media query for small screens */
+    @media (max-width: 767px) {
+      flex-direction: column; /* Stack content vertically on small screens */
+      gap: 2rem; /* Adjust gap between elements */
+    }
 
     .left__analytics {
       @include flexDirection;
       gap: $lg-gap;
       flex: 1;
 
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        gap: 1.5rem; /* Adjust gap between elements */
+      }
+
       .left__text {
         @include flexDirection;
         gap: $lg-gap;
 
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          gap: 1rem; /* Adjust gap between elements */
+        }
+
         h1 {
           font-size: 4rem;
           color: $primary-color;
+
+          /* Media query for small screens */
+          @media (max-width: 767px) {
+            font-size: 2.5rem; /* Adjust font size for small screens */
+          }
         }
 
         p {
@@ -32,6 +58,12 @@
       .left__analytics__container {
         @include flexAlign;
         gap: $lg-gap;
+
+        /* Media query for small screens */
+        @media (max-width: 767px) {
+          flex-wrap: wrap; /* Wrap analytics containers on small screens */
+          justify-content: center; /* Center align analytics containers on small screens */
+        }
 
         .analytic__container {
           @include flexAlign;
@@ -50,6 +82,12 @@
             transition: $trans;
             @include flexCenter;
 
+            /* Media query for small screens */
+            @media (max-width: 767px) {
+              height: 150px; /* Adjust icon height for small screens */
+              width: 150px; /* Adjust icon width for small screens */
+            }
+
             &:hover {
               background: $secondary-color;
               box-shadow: $shadow;
@@ -64,6 +102,11 @@
       flex: 1;
       display: flex;
       justify-content: flex-end;
+
+      /* Media query for small screens */
+      @media (max-width: 767px) {
+        justify-content: center; /* Center align the content on small screens */
+      }
     }
   }
 }

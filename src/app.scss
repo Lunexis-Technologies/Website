@@ -14,14 +14,14 @@ html {
 }
 
 .app__sttop {
-  background: "black";
+  background: $elementary-color;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 20px; /* Adjusted right value */
   color: $neutral;
   opacity: 0;
   transition: $trans;
@@ -36,5 +36,11 @@ html {
     height: 100%;
     width: 100%;
     @include flexCenter;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 767px) {
+    bottom: 10px; /* Adjust bottom value for smaller screens */
+    right: 10px; /* Adjust right value for smaller screens */
   }
 }
