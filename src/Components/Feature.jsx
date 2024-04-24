@@ -89,8 +89,7 @@ const Feature = () => {
                 <div className="feature__text">
                   <p>{feature}</p>
                   <span>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Odio, eos.
+                    Showcase your game dev progress with pics, vids & details
                   </span>
                 </div>
               </div>

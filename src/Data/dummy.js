@@ -35,12 +35,7 @@ export const analytics = [
   },
 ];
 
-export const features = [
-  "Choose a view",
-  "Meet your new butler",
-  "Dive into the details",
-  "Power up",
-];
+export const features = ["Share", "Communicate", "Build", "Grow"];
 
 export const controls = [
   {
