@@ -41,7 +41,7 @@ const Control = () => {
     >
       <div className="control__container">
         <div className="control__text">
-          <h1>Control in one place</h1>
+          <h1>Our Core Values</h1>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non esse
             eaque obcaecati repudiandae alias eveniet ea iure corrupti modi.

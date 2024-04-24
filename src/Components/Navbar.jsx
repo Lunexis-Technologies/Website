@@ -91,7 +91,7 @@ const Navbar = () => {
           style={{ color: bgColor ? '#0c1727' : 'white' }}
           className="onebtn"
         >
-          Learn More
+        Learn More
         </button>
         <button
           style={{

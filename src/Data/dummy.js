@@ -1,5 +1,6 @@
 import { AiOutlineClockCircle, AiFillCloud } from "react-icons/ai";
 import { SiGooglepodcasts } from "react-icons/si";
+import { Company } from "../Components";
 
 export const routes = [
   {
@@ -8,11 +9,11 @@ export const routes = [
   },
   {
     name: "Company",
-    path: "#how",
+    path: "#company",
   },
   {
     name: "Products",
-    path: "#about",
+    path: "#products",
   },
   {
     name: "Contact Us",
@@ -39,15 +40,15 @@ export const features = ["Share", "Communicate", "Build", "Grow"];
 
 export const controls = [
   {
-    name: "Structured Reports",
+    name: "Innovation",
     icon: SiGooglepodcasts,
   },
   {
-    name: "Cloud System",
+    name: "Acceleration",
     icon: AiFillCloud,
   },
   {
-    name: "24/7 Support",
+    name: "Passion",
     icon: AiOutlineClockCircle,
   },
 ];

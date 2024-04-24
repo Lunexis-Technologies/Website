@@ -1,11 +1,13 @@
 // Colors
+@import "./constant";
+@import "./variables";
 $primary-color: white;
 $secondary-color: white;
 $light-color: black;
 
 // Fonts
-$primary-font: 'Montserrat', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
+$primary-font:  Arial, Helvetica, sans-serif;
+$secondary-font:  Arial, Helvetica, sans-serif;
 
 .company {
   display: flex;
@@ -32,10 +34,17 @@ $secondary-font: 'Open Sans', sans-serif;
 
   &__title {
     font-family: $primary-font;
-    font-size: 3rem;
-    color: $primary-color;
-    margin-bottom: 1rem;
-  }
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  background-image: $text-gradient;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  cursor: pointer;
+  } 
 
   &__description {
     font-family: $secondary-font;

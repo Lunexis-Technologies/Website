@@ -28,6 +28,7 @@ const App = () => {
       <Analytics />
       <Feature />
       <Distribution />
+      <Company/>
       <Footer />
       <STTop />
     </div>
