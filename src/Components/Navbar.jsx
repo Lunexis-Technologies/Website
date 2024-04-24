@@ -35,7 +35,7 @@ const Navbar = () => {
           }}
           className="onebtn"
         >
-          Login
+         Learn More
         </button>
         <button
           style={{
