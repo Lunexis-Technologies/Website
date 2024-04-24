@@ -115,7 +115,9 @@ const Home = () => {
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <button type="submit">Try Argon Now!</button>
+        <button type="submit" className="company__cta">Try Argon Now!</button>
+    
+        
       </form>
       <ToastContainer />
     </div>
