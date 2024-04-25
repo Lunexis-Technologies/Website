@@ -7,6 +7,7 @@ import Distribution from "./Distribution";
 import Footer from "./Footer";
 import STTop from "./STTop";
 import Company from "./Company";
+import Careers from "./Careers";
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Footer,
   STTop,
   Company,
+  Careers
 };

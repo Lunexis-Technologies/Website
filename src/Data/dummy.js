@@ -11,14 +11,21 @@ export const routes = [
     name: "Company",
     path: "#company",
   },
+  
   {
     name: "Products",
     path: "#products",
   },
   {
-    name: "Contact Us",
-    path: "#contact",
+    name: "Careers",
+    path: "#careers",
   },
+
+  {
+    name: "Support",
+    path: "#support",
+  },
+
 ];
 
 export const analytics = [

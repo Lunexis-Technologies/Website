@@ -95,8 +95,8 @@ const Navbar = () => {
         </button>
         <button
           style={{
-            color: bgColor ? 'white' : '#0c1727',
-            background: bgColor ? '#0c1727' : 'white',
+            color: bgColor ? 'white' : 'black',
+            background: bgColor ? 'black' : 'white',
           }}
           onClick={() => setShowRegisterForm(true)}
         >

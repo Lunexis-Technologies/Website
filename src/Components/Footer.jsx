@@ -12,10 +12,12 @@ import { addDoc, collection } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 import { useState } from "react";
 
 
+
+import "react-toastify/dist/ReactToastify.css";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
@@ -28,12 +30,11 @@ const firebaseConfig = {
 };
 
 
-
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const usersCollection = collection(db, 'newsletter');
+const usersCollection = collection(db, "newsletter");
+
 
 
 
@@ -86,11 +87,20 @@ const Footer = () => {
           <div className="left__middle">
             <p>Subscribe to our news letter</p>
             <div className="input__container">
-              <input type="text" placeholder="Email address" />
+              <form onSubmit={handleSubmit}>
+              <input type="email"
+          placeholder="Email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required />
               <button className="company__cta">Join</button>
+              </form>
+           
             </div>
           </div>
+          
           <div className="right__middle">
+
             <ul className="middle__routes">
               {routes.map((route, index) => (
                 <li className="route" key={index}>

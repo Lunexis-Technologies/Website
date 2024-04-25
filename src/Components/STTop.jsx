@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BsArrowUp } from "react-icons/bs";
 import Company from "./Company";
 
+
 const STTop = () => {
   const [isActive, setIsActive] = useState(false);
 
