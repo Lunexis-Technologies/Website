@@ -33,7 +33,7 @@ const Careers = () => {
           vision and thrive in a collaborative environment, we invite you to explore our current
           career opportunities.
         </p>
-        <a href="#" onClick={handleViewPositions} className="careers__cta">
+        <a href="/" onClick={handleViewPositions} className="careers__cta">
           View Open Positions
         </a>
       </motion.div>
