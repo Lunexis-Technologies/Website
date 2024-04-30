@@ -43,24 +43,21 @@ const Control = () => {
         <div className="control__text">
           <h1>Our Core Values</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non esse
-            eaque obcaecati repudiandae alias eveniet ea iure corrupti modi.
+          Lunexis stands as the beacon of the digital entertainment realm. Pioneering revolutionary software tools, we empower developers to create unforgettable experiences and enhance community communication. Our mission includes crafting games that captivate and deeply resonate with global audiences, securing their hearts and igniting imaginations.
           </p>
-          <button>Start 14 days trial</button>
+         
         </div>
         <div className="control__content">
           {controls.map((control, index) => (
             <div className="control" key={index}>
-              <div className="control__icon">
-                <control.icon />
-              </div>
+             
 
               <div className="control__text__content">
                 <p>{control.name}</p>
                 <span>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolore, quos.
+                 {control.Text}
                 </span>
+              
               </div>
             </div>
           ))}

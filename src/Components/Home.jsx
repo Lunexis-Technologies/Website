@@ -7,10 +7,12 @@ import { useEffect } from "react";
 import { addDoc, collection } from "firebase/firestore";
 import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-
+import { Resend } from "resend";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import firebase from 'firebase/app';
+import 'firebase/functions';
 const firebaseConfig = {
   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
   authDomain: "lunexiswebsite.firebaseapp.com",
@@ -31,9 +33,21 @@ const Home = () => {
   const [email, setEmail] = useState("");
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
+      // Add email to Firebase
       await addDoc(usersCollection, { email });
       setEmail("");
+
+      // Send email using Resend
+      const resend = new Resend("re_L6JuGtmD_QAN1bRTB2hPHrPuHDEcAUhWc");
+      await resend.emails.send({
+        from: "email@mail.christianoliviermonfiston.com",
+        to: email,
+        subject: "Thanks for trying out Argon",
+        html: "<p>Thanks for trying out Argon! Here's some additional information...</p>",
+      });
+
       toast.success("Email added successfully!", {
         position: "top-right",
         autoClose: 5000,
@@ -80,7 +94,14 @@ const Home = () => {
       control.start("hidden");
     }
   }, [control, inView]);
+  const resend = new Resend('re_8bMxygrT_FApH9safB1niRdiFBZq4oBjL');
 
+  resend.emails.send({
+    from: 'onboarding@resend.dev',
+    to: 'christianoliviermonfiston@gmail.com',
+    subject: 'Hello World',
+    html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
+  });
   return (
     <div className="app__home" id="home">
       <motion.div

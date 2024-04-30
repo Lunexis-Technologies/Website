@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
         <div className="footer__middle">
           <div className="left__middle">
-            <p>Subscribe to our news letter</p>
+            <p>Subscribe to our Newsletter</p>
             <div className="input__container">
               <form onSubmit={handleSubmit}>
               <input type="email"
@@ -138,7 +138,7 @@ const Footer = () => {
                 <FaDiscord
                   onClick={() => {
                     window.location.href =
-                      "https://www.instagram.com/lunexistechnologies/";
+                      "https://discord.gg/JUbDd7vRmu";
                   }}
                 />
               </li>

@@ -68,13 +68,10 @@ const Analytics = () => {
       >
         <motion.div variants={item1} className="left__analytics">
           <div className="left__text">
-            <h1>Argon is a mobile app connecting developers and players</h1>
+            <h1>Argon is a social + game distribution platform.</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reprehenderit neque voluptas temporibus consectetur, accusantium,
-              soluta eligendi fuga fugiat doloremque sequi corrupti. Nam eveniet
-              odio sapiente eum? Quod accusamus distinctio incidunt.
-            </p>
+            Argon empowers developers to sell their games, create custom communities, interact with players, and showcase their work while keeping 100% of sales. Real-time analytics provide insights into player behavior. Players can dive into endless gaming, connect with friends, and enjoy infinite fun. </p>
+            <h4>Our iOS public beta launched on April 26th, and we're thrilled to share our initial analytics with you!</h4>
           </div>
           <div className="left__analytics__container">
             {analytics.map((analytic, index) => (

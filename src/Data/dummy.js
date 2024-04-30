@@ -30,16 +30,20 @@ export const routes = [
 
 export const analytics = [
   {
-    name: "Beta users",
-    desc: "10",
+    name: "Beta Testers",
+    desc: "27",
   },
   {
-    name: "Feedback",
-    desc: "16",
+    name: "Daily Active User",
+    desc: "12",
   },
   {
-    name: "Support",
-    desc: "24/7",
+    name: "Crashes",
+    desc: "0",
+  },
+  {
+    name: "Average Engagement Time Per Session",
+    desc: "27m 42s",
   },
 ];
 
@@ -48,14 +52,17 @@ export const features = ["Share", "Communicate", "Build", "Grow"];
 export const controls = [
   {
     name: "Innovation",
-    icon: SiGooglepodcasts,
+    //icon: SiGooglepodcasts,
+    Text: "hey"
   },
   {
     name: "Acceleration",
-    icon: AiFillCloud,
+    //icon: AiFillCloud,
+    Text: "No"
   },
   {
     name: "Passion",
-    icon: AiOutlineClockCircle,
+   // icon: AiOutlineClockCircle,
+    Text: "workin"
   },
 ];
