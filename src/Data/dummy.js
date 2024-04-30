@@ -1,15 +1,16 @@
 import { AiOutlineClockCircle, AiFillCloud } from "react-icons/ai";
 import { SiGooglepodcasts } from "react-icons/si";
 import { Company } from "../Components";
+import { Link } from "react-router-dom";
 
 export const routes = [
   {
-    name: "Home",
+    name: <Link>Home</Link>,
     path: "#",
   },
   {
-    name: "Company",
-    path: "#company",
+    name: <Link to="/Company">Company</Link>,
+    //path: ".src/Components/Company.jsx"
   },
   
   {
@@ -17,13 +18,12 @@ export const routes = [
     path: "#products",
   },
   {
-    name: "Careers",
-    path: "#careers",
+    name: <Link to="/Careers">Careers</Link>,
   },
 
   {
     name: "Support",
-    path: "#support",
+    path: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPGFkkjZrRzzWtjtCVdDfQSHNTNknjpnrtlrMLJppDvFMMRWWdzRLCDqslMFBTJDsvFBBzh",
   },
 
 ];

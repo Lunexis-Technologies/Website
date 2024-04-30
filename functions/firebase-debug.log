@@ -1,0 +1,63 @@
+[debug] [2024-04-30T10:07:03.873Z] ----------------------------------------------------------------------
+[debug] [2024-04-30T10:07:03.875Z] Command:       /opt/homebrew/Cellar/node/21.7.1/bin/node /Users/christianoliviermonfiston/Desktop/Website/Website/node_modules/.bin/firebase functions:shell
+[debug] [2024-04-30T10:07:03.875Z] CLI Version:   13.7.5
+[debug] [2024-04-30T10:07:03.875Z] Platform:      darwin
+[debug] [2024-04-30T10:07:03.875Z] Node Version:  v21.7.1
+[debug] [2024-04-30T10:07:03.875Z] Time:          Tue Apr 30 2024 06:07:03 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-30T10:07:03.875Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-30T10:07:03.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-30T10:07:03.911Z] > authorizing via signed-in user (christianoliviermonfiston@gmail.com)
+[debug] [2024-04-30T10:07:03.911Z] [iam] checking project lunexiswebsite for permissions ["firebase.projects.get"]
+[debug] [2024-04-30T10:07:03.912Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lunexiswebsite:testIamPermissions [none]
+[debug] [2024-04-30T10:07:03.912Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lunexiswebsite:testIamPermissions x-goog-quota-user=projects/lunexiswebsite
+[debug] [2024-04-30T10:07:03.912Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lunexiswebsite:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-04-30T10:07:04.133Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lunexiswebsite:testIamPermissions 200
+[debug] [2024-04-30T10:07:04.133Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lunexiswebsite:testIamPermissions {"permissions":["firebase.projects.get"]}
+[warn] ⚠  functions: Functions Emulator unable to start on port 5000, starting on 5001 instead. {"metadata":{"emulator":{"name":"functions"},"message":"Functions Emulator unable to start on port 5000, starting on 5001 instead."}}
+[debug] [2024-04-30T10:07:04.247Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-30T10:07:04.248Z] defaultcredentials: writing to file /Users/christianoliviermonfiston/.config/firebase/christianoliviermonfiston_gmail_com_application_default_credentials.json
+[debug] [2024-04-30T10:07:04.249Z] DEBUG: Setting GAC to /Users/christianoliviermonfiston/.config/firebase/christianoliviermonfiston_gmail_com_application_default_credentials.json
+[debug] [2024-04-30T10:07:04.250Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lunexiswebsite/adminSdkConfig [none]
+[debug] [2024-04-30T10:07:04.656Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lunexiswebsite/adminSdkConfig 200
+[debug] [2024-04-30T10:07:04.656Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lunexiswebsite/adminSdkConfig {"projectId":"lunexiswebsite","databaseURL":"https://lunexiswebsite-default-rtdb.firebaseio.com","storageBucket":"lunexiswebsite.appspot.com"}
+[debug] [2024-04-30T10:07:04.668Z] [functions] Watching "/Users/christianoliviermonfiston/Desktop/Website/Website/functions" for Cloud Functions...
+[debug] [2024-04-30T10:07:04.671Z] Validating nodejs source
+[debug] [2024-04-30T10:07:05.081Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.3",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-04-30T10:07:05.081Z] Building nodejs source
+[debug] [2024-04-30T10:07:05.081Z] Failed to find version of module node: reached end of search path /Users/christianoliviermonfiston/Desktop/Website/Website/functions/node_modules
+[warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "21". Using node@21 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-04-30T10:07:05.083Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-30T10:07:05.086Z] Found firebase-functions binary at '/Users/christianoliviermonfiston/Desktop/Website/Website/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8425
+
+[debug] [2024-04-30T10:07:05.372Z] Got response from /__/functions.yaml {"endpoints":{"sendEmailNotification":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","eventFilters":{"resource":"projects/lunexiswebsite/databases/(default)/documents/users/{docId}"},"retry":false},"labels":{},"entryPoint":"sendEmailNotification"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-04-30T10:07:10.398Z] [functions] Loaded functions definitions from source: sendEmailNotification.
+[debug] [2024-04-30T10:07:10.399Z] [functions[us-central1-sendEmailNotification]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: sendEmailNotification 
+[warn] ⚠  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage, eventarc 

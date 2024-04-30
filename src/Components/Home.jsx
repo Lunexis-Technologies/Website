@@ -11,8 +11,6 @@ import { Resend } from "resend";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-import firebase from 'firebase/app';
-import 'firebase/functions';
 const firebaseConfig = {
   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
   authDomain: "lunexiswebsite.firebaseapp.com",
@@ -23,7 +21,6 @@ const firebaseConfig = {
   measurementId: "G-EGR5BDGHJG"
 };
 
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
@@ -31,9 +28,9 @@ const usersCollection = collection(db, "users");
 
 const Home = () => {
   const [email, setEmail] = useState("");
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       // Add email to Firebase
       await addDoc(usersCollection, { email });
@@ -70,14 +67,15 @@ const Home = () => {
       });
     }
   };
+
   const control = useAnimation();
   const [ref, inView] = useInView();
   const list = {
     hidden: { opacity: 0 },
-    vissible: { opacity: 1 },
+    visible: { opacity: 1 },
   };
   const item = {
-    vissible: {
+    visible: {
       opacity: 1,
       x: 0,
     },
@@ -89,19 +87,12 @@ const Home = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("vissible");
+      control.start("visible");
     } else {
       control.start("hidden");
     }
   }, [control, inView]);
-  const resend = new Resend('re_8bMxygrT_FApH9safB1niRdiFBZq4oBjL');
 
-  resend.emails.send({
-    from: 'onboarding@resend.dev',
-    to: 'christianoliviermonfiston@gmail.com',
-    subject: 'Hello World',
-    html: '<p>Congrats on sending your <strong>first email</strong>!</p>'
-  });
   return (
     <div className="app__home" id="home">
       <motion.div
@@ -119,7 +110,7 @@ const Home = () => {
           <span>
             <TiTick />
           </span>
-          Argon is in Beta, Try It!
+          Argon is glowing, Try It!
         </p>
         <p>
           <span>
@@ -128,18 +119,13 @@ const Home = () => {
           We want to hear your feedback!
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="input__container">
-        <input
-          type="email"
-          placeholder="Add your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <button type="submit" className="company__cta">Try Argon Now!</button>
-    
-        
-      </form>
+      <div className="cta__container">
+        <a href="https://testflight.apple.com/join/bjuA3HQs" target="_blank" rel="noopener noreferrer">
+          <button type="submit" className="company__cta centered">
+            Try Argon Now!
+          </button>
+        </a>
+      </div>
       <ToastContainer />
     </div>
   );

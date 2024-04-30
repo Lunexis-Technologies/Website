@@ -16,6 +16,7 @@ $secondary-font:  Arial, Helvetica, sans-serif;
   align-items: center;
   padding: 2rem;
   background-color: $light-color;
+ 
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -54,18 +55,28 @@ $secondary-font:  Arial, Helvetica, sans-serif;
     margin-bottom: 2rem;
   }
 
+
+  &__cta_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value as needed */
+  }
+
   &__cta {
-    display: inline-block;
     padding: 1rem 2rem;
     background-color: $secondary-color;
     color: $light-color;
     text-decoration: none;
     font-family: $primary-font;
     font-weight: bold;
+    width: 10rem;
     border-radius: 100rem;
     transition: background-color 0.3s ease;
     box-shadow: 0 0 10px rgba($secondary-color, 0.8);
     animation: glow 2s infinite;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
       background-color: darken($secondary-color, 10%);
@@ -84,7 +95,7 @@ $secondary-font:  Arial, Helvetica, sans-serif;
 }
 
 .glow {
-  animation: glow 2s infinite;
+  //animation: glow 2s infinite;
 }
 
 @keyframes glow {

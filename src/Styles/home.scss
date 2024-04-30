@@ -15,7 +15,23 @@
     flex-direction: column; /* Stack content vertically on small screens */
     gap: 2rem; /* Adjust gap between elements */
   }
-
+  .cta__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  
+    .company__cta {
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+    
+      &:hover {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5),
+          0 0 60px rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
   .home__text {
     text-align: center;
 
