@@ -16,7 +16,6 @@ import {
 import Careers from "./Components/Careers";
 import Company from "./Components/Company";
 
-// Import the functions you need from the SDKs you need
 
 
 
