@@ -37,13 +37,7 @@ const Home = () => {
       setEmail("");
 
       // Send email using Resend
-      const resend = new Resend("re_L6JuGtmD_QAN1bRTB2hPHrPuHDEcAUhWc");
-      await resend.emails.send({
-        from: "email@mail.christianoliviermonfiston.com",
-        to: email,
-        subject: "Thanks for trying out Argon",
-        html: "<p>Thanks for trying out Argon! Here's some additional information...</p>",
-      });
+      
 
       toast.success("Email added successfully!", {
         position: "top-right",
