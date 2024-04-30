@@ -18,7 +18,6 @@ import Company from "./Components/Company";
 
 // Import the functions you need from the SDKs you need
 
-const sendgridapi ="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";
 
 
 const App = () => {
