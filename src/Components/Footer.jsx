@@ -78,10 +78,7 @@ const Footer = () => {
           <div className="logo">
             <p>LUNEXIS</p>
           </div>
-          <div className="footer__cta">
-            <p>Follow our journey</p>
-            <button>Get Started</button>
-          </div>
+         
         </div>
         <div className="footer__middle">
           <div className="left__middle">
@@ -113,8 +110,8 @@ const Footer = () => {
         <div className="footer__bottom">
           <div className="left__bottom">
             <ul>
-              <li>Terms & conditions</li>
-              <li>Privacy Policy</li>
+              <li>© Lunexis Technologies Inc.</li>
+            
             </ul>
           </div>
           <div className="right__bottom">

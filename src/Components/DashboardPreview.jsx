@@ -25,7 +25,7 @@ const DashboardPreview = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("vissible");
+      control.start("hidden");
     } else {
       control.start("hidden");
     }

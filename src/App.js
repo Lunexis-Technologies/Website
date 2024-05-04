@@ -26,7 +26,6 @@ const App = () => {
       <Navbar />
      
       <Home />
-      <DashboardPreview />
       <Analytics />
       <Feature />
       <Distribution />

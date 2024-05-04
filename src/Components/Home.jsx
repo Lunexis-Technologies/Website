@@ -104,7 +104,7 @@ const Home = () => {
           <span>
             <TiTick />
           </span>
-          Argon is glowing, Try It!
+          Argon's beta is now available on iOS, Test It!
         </p>
         <p>
           <span>
@@ -115,7 +115,7 @@ const Home = () => {
       </div>
       <div className="cta__container">
         <a href="https://testflight.apple.com/join/bjuA3HQs" target="_blank" rel="noopener noreferrer">
-          <button type="submit" className="company__cta centered">
+          <button type="submit" className="company__cta">
             Try Argon Now!
           </button>
         </a>

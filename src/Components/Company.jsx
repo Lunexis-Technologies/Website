@@ -15,17 +15,15 @@ const Company = () => {
       >
         <h1 className="company__title">LUNEXIS</h1>
         <p className="company__description">
-          Our innovative startup is on a mission to redefine the landscape of digital entertainment by crafting games that transcend conventional amusement. 
-
-          Envisioned as bridges, these games connect individuals and deliver unparalleled experiences through gameplay.
+        We are building Lunexis with a vision to become a leading force in the gaming industry, driven by our devotion for bringing people together through video games. We firmly believe that gaming will soon become an integral part of everyone's lives, transcending boundaries of age, gender, and geography. Our mission is to lead and accelerate this exciting future through our inaugural product, Argon.
         </p>
         <motion.a
-          href="#"
+          href="https://testflight.apple.com/join/bjuA3HQs"
           className="company__cta"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          Register for our Beta!
+          Try our Beta on iOS!
         </motion.a>
         
       </motion.div>

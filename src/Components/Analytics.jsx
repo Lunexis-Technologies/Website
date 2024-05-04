@@ -70,8 +70,9 @@ const Analytics = () => {
           <div className="left__text">
             <h1>Argon is a social + game distribution platform.</h1>
             <p>
-            Argon empowers developers to sell their games, create custom communities, interact with players, and showcase their work while keeping 100% of sales. Real-time analytics provide insights into player behavior. Players can dive into endless gaming, connect with friends, and enjoy infinite fun. </p>
-            <h4>Our iOS public beta launched on April 26th, and we're thrilled to share our initial analytics with you!</h4>
+            Argon is redefining  the world of gaming distribution. We are eliminating sales commissions and fostering strong connections between creators and players. We are transforming how games are shared and enjoyed with powerful tools for community engagement and a commitment to innovation. We are shaping the future of gaming.
+            </p>
+            <h4>Our iOS beta launched on April 26th. Check out our initial analytics! Last Updated May 3rd</h4>
           </div>
           <div className="left__analytics__container">
             {analytics.map((analytic, index) => (
@@ -83,7 +84,7 @@ const Analytics = () => {
           </div>
         </motion.div>
         <motion.div variants={item2} className="right__analytics">
-          <img src={onephone} alt="" draggable={false} />
+          <img src={onephone} alt="" draggable={false} width={500}/>
         </motion.div>
       </motion.div>
     </div>

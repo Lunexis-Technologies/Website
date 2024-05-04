@@ -2,7 +2,7 @@
 @import "./variables";
 
 .app__distribution {
-  padding: 40% $md-gap 10% $md-gap;
+  padding: 0% $md-gap 10% $md-gap;
 
   /* Media query for small screens */
   @media (max-width: 767px) {

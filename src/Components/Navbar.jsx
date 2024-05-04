@@ -92,7 +92,7 @@ const Navbar = () => {
           style={{ color: bgColor ? '#0c1727' : 'white' }}
           className="onebtn"
         >
-        Learn More
+       
         </button>
         <button
           style={{
@@ -112,7 +112,7 @@ const Navbar = () => {
           <form onSubmit={handleSubmit}>
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Enter your email and stay up to date!"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required

@@ -2,11 +2,11 @@
 @import "./variables";
 
 .app__home {
-  height: 130vh;
+  height: 100vh;
   background: $primary-color;
   padding: $ex-gap $md-gap;
   @include flexDirection;
-  gap: 3rem;
+  gap: 5rem;
 
   /* Media query for small screens */
   @media (max-width: 767px) {

@@ -13,45 +13,46 @@ export const routes = [
     //path: ".src/Components/Company.jsx"
   },
   
-  {
-    name: "Products",
-    path: "#products",
-  },
+  
   {
     name: <Link to="/Careers">Careers</Link>,
   },
 
-  {
-    name: "Support",
-    path: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSPGFkkjZrRzzWtjtCVdDfQSHNTNknjpnrtlrMLJppDvFMMRWWdzRLCDqslMFBTJDsvFBBzh",
-  },
+ 
 
 ];
 
 export const analytics = [
   {
     name: "Beta Testers",
-    desc: "27",
+    desc: "41",
   },
-  {
-    name: "Daily Active User",
-    desc: "12",
-  },
-  {
-    name: "Crashes",
-    desc: "0",
-  },
+
   {
     name: "Average Engagement Time Per Session",
-    desc: "27m 42s",
+    desc: "17m",
   },
+
+ 
 ];
 
-export const features = ["Share", "Communicate", "Build", "Grow"];
+export const features = ["Posts: Gameplay, Snapshots, Updates, Announcements", "Discover, Chat, Join Communities, Game Together", "Developers keep 100% of revenue.", "Get Realtime Analytics"];
+export const featuresList = [ {
+  Text: "hey"
+},
+{
+ 
+  
+  Text: "No"
+},
+{
 
+ // icon: AiOutlineClockCircle,
+  Text: "workin"
+},];
 export const controls = [
   {
-    name: "Innovation",
+   
     //icon: SiGooglepodcasts,
     Text: "hey"
   },

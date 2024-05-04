@@ -25,7 +25,7 @@ const Control = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("vissible");
+      control.start("visible");
     } else {
       control.start("hidden");
     }

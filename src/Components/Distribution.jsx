@@ -69,22 +69,23 @@ const Distribution = () => {
       >
         <motion.div variants={item1} className="left__distribution">
           <div className="distribution__text">
-            <h1>Our mission is to change the world</h1>
-            <p>Lunexis mission is to change the gaming industry.</p>
+            <h1>Accelerating The Future of Play</h1>
+            <p>Our mission is to accelerate this future by equipping developers with top-tier tools to realize their visions and enticing players to embark on limitless gaming adventures.
+</p>
           </div>
+          <a href="https://testflight.apple.com/join/bjuA3HQs" target="_blank" rel="noopener noreferrer">
           <div className="distribution__buttons">
-            <button>
+            <button type="submit" >
               <BsApple />
-              Download The Beta on TestFlight
+            Try our Beta on TestFlight
             </button>
-            <button>
-              <IoLogoGooglePlaystore />
-              Beta Coming Soon
-            </button>
+          
           </div>
+          </a>
+         
         </motion.div>
         <motion.div variants={item2} className="right__distribution">
-          <img src={twophones} alt="" draggable={false} />
+          <img src={twophones} alt="" draggable={false}  width={400}/>
         </motion.div>
       </motion.div>
     </div>

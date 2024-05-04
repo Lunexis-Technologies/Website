@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { feature } from "../Images";
 import { features } from "../Data/dummy";
 import { TiTick } from "react-icons/ti";
+import { featuresList } from "../Data/dummy";
 import "../Styles/feature.scss";
 import Control from "./Control";
 import { motion, useAnimation } from "framer-motion";
@@ -73,13 +74,11 @@ const Feature = () => {
         <motion.div variants={item2} className="right__feature">
           <div className="right__text">
             <h1>
-              Feature to help <br /> your team succeed
+              Features <br /> 
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              modi alias dolorem non nulla corporis dolorum enim optio ducimus
-              nihil, sint fugit, praesentium consectetur illum minima cum,
-              libero nobis debitis.
+            Argon allows users to buy games,  discover new friends, chat with others, and join or create custom game communities. Users can post gameplay,  development snapshots, and announcements. Argon inspires users to share and build together on its platform. 
+
             </p>
           </div>
           <div className="feature__content">
@@ -89,7 +88,7 @@ const Feature = () => {
                 <div className="feature__text">
                   <p>{feature}</p>
                   <span>
-                    Showcase your game dev progress with pics, vids & details
+                   {featuresList.Text}
                   </span>
                 </div>
               </div>
