@@ -12,15 +12,14 @@ import { addDoc, collection } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import { ToastContainer, toast } from 'react-toastify';
-
 import { useState } from "react";
-
-
-
 import "react-toastify/dist/ReactToastify.css";
+import { FIREBASE_URL } from "../Secrets"
 
+// require('dotenv').config()
 const firebaseConfig = {
-  apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+  // apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+  apiKey: FIREBASE_URL,
   authDomain: "lunexiswebsite.firebaseapp.com",
   projectId: "lunexiswebsite",
   storageBucket: "lunexiswebsite.appspot.com",
@@ -78,24 +77,24 @@ const Footer = () => {
           <div className="logo">
             <p>LUNEXIS</p>
           </div>
-         
+
         </div>
         <div className="footer__middle">
           <div className="left__middle">
             <p>Subscribe to our Newsletter</p>
             <div className="input__container">
               <form onSubmit={handleSubmit}>
-              <input type="email"
-          placeholder="Email address"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required />
-              <button className="company__cta">Join</button>
+                <input type="email"
+                  placeholder="Email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required />
+                <button className="company__cta">Join</button>
               </form>
-           
+
             </div>
           </div>
-          
+
           <div className="right__middle">
 
             <ul className="middle__routes">
@@ -111,13 +110,13 @@ const Footer = () => {
           <div className="left__bottom">
             <ul>
               <li>© Lunexis Technologies Inc.</li>
-            
+
             </ul>
           </div>
           <div className="right__bottom">
             <ul>
               <li>
-                <BsTwitter 
+                <BsTwitter
                   onClick={() => {
                     window.location.href = "https://twitter.com/lunexistech ";
                   }}

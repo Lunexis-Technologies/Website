@@ -10,9 +10,10 @@ import { initializeApp } from "firebase/app";
 import { Resend } from "resend";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FIREBASE_URL } from "../Secrets"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+  apiKey: FIREBASE_URL,
   authDomain: "lunexiswebsite.firebaseapp.com",
   projectId: "lunexiswebsite",
   storageBucket: "lunexiswebsite.appspot.com",
@@ -37,7 +38,7 @@ const Home = () => {
       setEmail("");
 
       // Send email using Resend
-      
+
 
       toast.success("Email added successfully!", {
         position: "top-right",
