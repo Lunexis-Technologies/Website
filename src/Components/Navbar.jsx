@@ -7,17 +7,17 @@ import { initializeApp } from 'firebase/app';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
+import { firebaseConfig } from './Home';
 import { Link } from 'react-router-dom';
-const firebaseConfig = {
-  apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
-  authDomain: "lunexiswebsite.firebaseapp.com",
-  projectId: "lunexiswebsite",
-  storageBucket: "lunexiswebsite.appspot.com",
-  messagingSenderId: "439394939597",
-  appId: "1:439394939597:web:4c386f8c45352b1fe3ef84",
-  measurementId: "G-EGR5BDGHJG"
-};
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+//   authDomain: "lunexiswebsite.firebaseapp.com",
+//   projectId: "lunexiswebsite",
+//   storageBucket: "lunexiswebsite.appspot.com",
+//   messagingSenderId: "439394939597",
+//   appId: "1:439394939597:web:4c386f8c45352b1fe3ef84",
+//   measurementId: "G-EGR5BDGHJG"
+// };
 
 
 
@@ -92,7 +92,7 @@ const Navbar = () => {
           style={{ color: bgColor ? '#0c1727' : 'white' }}
           className="onebtn"
         >
-       
+
         </button>
         <button
           style={{

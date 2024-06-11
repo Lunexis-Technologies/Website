@@ -17,7 +17,9 @@ export const routes = [
   {
     name: <Link to="/Careers">Careers</Link>,
   },
-
+  {
+    name: <Link to="/Products">Products</Link>,
+  },
  
 
 ];

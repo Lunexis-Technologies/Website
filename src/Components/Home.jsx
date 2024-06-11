@@ -10,10 +10,10 @@ import { initializeApp } from "firebase/app";
 import { Resend } from "resend";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FIREBASE_URL } from "../Secrets"
+// import { FIREBASE_URL } from "../Secrets"
 
-const firebaseConfig = {
-  apiKey: FIREBASE_URL,
+export const firebaseConfig = {
+  apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
   authDomain: "lunexiswebsite.firebaseapp.com",
   projectId: "lunexiswebsite",
   storageBucket: "lunexiswebsite.appspot.com",
@@ -28,17 +28,19 @@ const db = getFirestore(app);
 const usersCollection = collection(db, "users");
 
 const Home = () => {
+
+
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      // Add email to Firebase
+
+    (async (e) => {
+      e.preventDefault();
       await addDoc(usersCollection, { email });
+
+    })(e).then(_ => {
       setEmail("");
-
       // Send email using Resend
-
 
       toast.success("Email added successfully!", {
         position: "top-right",
@@ -49,7 +51,8 @@ const Home = () => {
         draggable: true,
         progress: undefined,
       });
-    } catch (error) {
+    }
+    ).catch(error => {
       console.error("Error adding email: ", error);
       toast.error("Error adding email. Please try again.", {
         position: "top-right",
@@ -59,8 +62,37 @@ const Home = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-      });
-    }
+      })
+    });
+    // try {
+    //   // Add email to Firebase
+    //   await addDoc(usersCollection, { email });
+    //   setEmail("");
+
+    //   // Send email using Resend
+
+
+    //   toast.success("Email added successfully!", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // } catch (error) {
+    //   console.error("Error adding email: ", error);
+    //   toast.error("Error adding email. Please try again.", {
+    //     position: "top-right",
+    //     autoClose: 5000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // }
   };
 
   const control = useAnimation();

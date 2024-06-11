@@ -3,30 +3,27 @@ import "../Styles/Footer.scss";
 import { routes } from "../Data/dummy";
 //import { FaFacebookF } from "react-icons/fa";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
-import { BsX } from "react-icons/bs";
-import { BsXLg } from "react-icons/bs";
-import { BsDiscord } from "react-icons/bs";
+// import { BsDiscord } from "react-icons/bs";
 import { FaDiscord, FaTwitter } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
 import { addDoc, collection } from 'firebase/firestore';
 import { getFirestore } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 import { ToastContainer, toast } from 'react-toastify';
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import { FIREBASE_URL } from "../Secrets"
-
+// import { FIREBASE_URL } from "../Secrets"
+import { firebaseConfig } from "./Home";
 // require('dotenv').config()
-const firebaseConfig = {
-  // apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
-  apiKey: FIREBASE_URL,
-  authDomain: "lunexiswebsite.firebaseapp.com",
-  projectId: "lunexiswebsite",
-  storageBucket: "lunexiswebsite.appspot.com",
-  messagingSenderId: "439394939597",
-  appId: "1:439394939597:web:4c386f8c45352b1fe3ef84",
-  measurementId: "G-EGR5BDGHJG"
-};
+// const firebaseConfig = {
+//   // apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+//   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
+//   authDomain: "lunexiswebsite.firebaseapp.com",
+//   projectId: "lunexiswebsite",
+//   storageBucket: "lunexiswebsite.appspot.com",
+//   messagingSenderId: "439394939597",
+//   appId: "1:439394939597:web:4c386f8c45352b1fe3ef84",
+//   measurementId: "G-EGR5BDGHJG"
+// };
 
 
 // Initialize Firebase
