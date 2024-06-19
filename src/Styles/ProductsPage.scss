@@ -16,14 +16,14 @@
     }
   
     .product-card {
-      background-color: #fff;
+      background-color: black;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
       overflow: hidden;
-      transition: transform 0.3s ease;
+      transition: transform 1.0s ease;
   
       &:hover {
-        transform: translateY(-5px);
+        transform: translateY(150px);
       }
   
       img {
@@ -40,12 +40,12 @@
       p {
         margin: 0 1rem 1rem;
         font-size: 0.9rem;
-        color: #666;
+        color: white;
       }
   
       .price {
         font-weight: bold;
-        color: #333;
+        color: gray;
       }
   
       button {

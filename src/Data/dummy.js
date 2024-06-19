@@ -10,16 +10,17 @@ export const routes = [
   },
   {
     name: <Link to="/Company">Company</Link>,
-    //path: ".src/Components/Company.jsx"
+    path: ".src/Components/Company.jsx"
+    // compoenent: <Company />
   },
   
   
   {
     name: <Link to="/Careers">Careers</Link>,
   },
-  {
-    name: <Link to="/Products">Products</Link>,
-  },
+  // {
+  //   name: <Link to="/Products">Products</Link>,
+  // },
  
 
 ];

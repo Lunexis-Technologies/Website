@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { Company } from "./Components";
+import { Company, Dropdown, DropdownMenu } from "./Components";
 import {Careers} from "./Components";
-import {ProductsPage} from "./Components";
+// import {ProductsPage} from "./Components";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "Products",
-    element: <ProductsPage/>,
+    element: <DropdownMenu/>,
 
   },
  
