@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { firebaseConfig } from './Home';
 import { Link } from 'react-router-dom';
 import DropdownMenu from './ProductsPage';
+// import { Menu } from '.';
 // const firebaseConfig = {
 //   apiKey: "AIzaSyBQsz4utJ3-PZjmebXiOMaI9c4I2jLbmsk",
 //   authDomain: "lunexiswebsite.firebaseapp.com",

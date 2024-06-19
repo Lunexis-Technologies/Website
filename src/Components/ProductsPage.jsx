@@ -5,9 +5,11 @@ import { useState } from 'react';
 import "../Styles/ProductsPage.scss";
 import { onephone } from '../Images';
 // import exp from 'constants';
+// import exp from 'constants';
 
 
-const ProductsPage = () => {
+export const ProductsPage = () => {
+  
   const products = [
     {
       id: 1,
@@ -19,12 +21,11 @@ const ProductsPage = () => {
 
   ];
   // document.getElementsByClassName('app').style.filter = 'blur(5px)'
-
   return (
     <div className="products-page">
 
 
-      <h1>Our Products</h1>
+      <h1>Argon</h1>
       <div className="product-grid">
         {products.map((product) => (
           <div className="product-card" key={product.id}>
@@ -45,8 +46,14 @@ const ProductsPage = () => {
     </div>
   );
 };
-
-const DropdownMenu = () => {
+const Menu = () => {
+  return <div className="dropdown-menu">
+    <ul>
+      <a href="/Argon">Argon</a>
+    </ul>
+  </div>
+}
+export const DropdownMenu = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
 
   const handleMouseEnter = () => {
@@ -58,14 +65,14 @@ const DropdownMenu = () => {
   };
   return (
     <div
-      className="menu"
+      className="DropDownMenu"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <a>Products</a>
 
       {/* <DropdownMenu /> */}
-      {isDropdownVisible && <ProductsPage />}
+      {isDropdownVisible && <Menu />}
     </div>
 
   );
@@ -74,3 +81,4 @@ const DropdownMenu = () => {
 
 // export default ProductsPage;
 export default DropdownMenu;
+// export default DropdownMenu;

@@ -1,40 +1,39 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { Company, Dropdown, DropdownMenu } from "./Components";
-import {Careers} from "./Components";
-// import {ProductsPage} from "./Components";
+import { Company } from "./Components";
+import { Careers } from "./Components";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
+import { ProductsPage } from "./Components/ProductsPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <App />,
   },
   {
     path: "Company",
-    element: <Company/>,
+    element: <Company />,
   },
   {
     path: "Careers",
-    element: <Careers/>,
+    element: <Careers />,
 
   },
   {
-    path: "Products",
-    element: <DropdownMenu/>,
+    path: "Argon",
+    element: <ProductsPage />,
 
   },
- 
+
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-  <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
