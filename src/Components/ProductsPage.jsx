@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import "../Styles/ProductsPage.scss";
+import "../Styles/ProductsMenu.scss"
 import { onephone } from '../Images';
 // import exp from 'constants';
 // import exp from 'constants';
